@@ -1,0 +1,17 @@
+
+
+.add-spot form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-spot form input,textarea{
+    border: 1px solid rgba(128, 128, 128, 0.433);
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 8px;
+}

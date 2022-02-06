@@ -29,13 +29,13 @@ const ManageOrder = () => {
     }
 
     return (
-        <div>
-            <h1>manageOrder</h1>
+        <Container>
+            <h1 className="place-text my-5">Manage All Orders</h1>
             <Container>
                 {
                     orderedItems.map(orderedItem => <div
                         key={orderedItem._id}>
-                        <Row className="m-5 bg-warning p-3 rounded">
+                        <Row className="m-5 border border-light shadow-sm p-3 rounded">
                             <Col md={8}>
                                 <div className="text-start">
                                     <h1>Destination: {orderedItem.placeName}</h1>
@@ -45,13 +45,13 @@ const ManageOrder = () => {
                                 </div>
                             </Col>
                             <Col className="text-center mt-5 pt-3" md={4}>
-                                <button className="btn btn-dark fw-bold" onClick={() => handleDelete(orderedItem._id)}>Remove</button>
+                                <button className="btn button text-light px-4 py-2 fw-bold" onClick={() => handleDelete(orderedItem._id)}>Remove</button>
                             </Col>
                         </Row>
                     </div>)
                 }
             </Container>
-        </div>
+        </Container>
     );
 };
 

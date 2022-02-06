@@ -19,6 +19,7 @@ import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import MyOrder from './Pages/MyOrder/MyOrder';
 import ManageOrder from './Pages/ManageOrder/ManageOrder';
 import AddSpot from './Pages/AddSpot/AddSpot';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/places">
             <Places/>
+          </Route>
+          <Route path="/plans">
+            <Plans/>
           </Route>
             <PrivateRoute path="/placeDetails/:id">
             <PlaceDetails/>
@@ -62,7 +66,7 @@ function App() {
           <Route path="/signup">
             <Signin/>
           </Route>
-        </Switch>
+          </Switch>
       </Router>
       </AuthProvider>
 
