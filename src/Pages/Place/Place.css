@@ -1,0 +1,21 @@
+.card{
+    border-radius:10px;
+    border: 1px solid rgba(128, 128, 128, 0.213);
+}
+.effect{
+    color: black;
+}
+.size{
+    border-radius:10px 10px 0 0;
+    height:150px;
+}
+.text{
+    transition: background-color 1s ease , color 1s ease;
+    border-radius:0 0 10px 10px;
+}
+.effect:hover .text{
+    border-radius:0 0 10px 10px;
+    background:rgb(255, 0, 0);
+    color: white;
+}
+
