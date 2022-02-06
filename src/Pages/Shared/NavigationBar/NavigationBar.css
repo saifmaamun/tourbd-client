@@ -1,7 +1,17 @@
+
+.nav{
+    background-color: #659dbd;
+}
 .nav-style{
     color: #fff;
     padding-right: 15px;
 }
 .nav-style:hover{
-    color: #000;
+    color: #05386B;
+}
+.button{
+    background-color: #659dbd;
+}
+.button:hover{
+    background-color: #517b94;
 }

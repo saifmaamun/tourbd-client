@@ -8,10 +8,10 @@ const NavigationBar = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <Navbar bg="primary" expand="lg">
+            <Navbar className="nav" expand="lg">
                 <Container>
                     <Navbar.Brand>
-                        <Link className="nav-style" to="/">React Bootstrap</Link>
+                        <Link className="nav-style" to="/">TourBD</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -36,9 +36,9 @@ const NavigationBar = () => {
                             
                         {user?.email && <Nav className="me">
                         
-                            <Button Button className="bg-light px-4 ms-2 text-dark fw-bold border-0" onClick={logOut}>Logout</Button>
-                            <Navbar.Text className="ms-2 px-1 text-primary fw-bold">
-                                <span className="px-1 text-light fw-bold"> {user.displayName}</span>
+                            <Button Button className="button px-4 ms-2 text-light border-0" onClick={logOut}>Logout</Button>
+                            <Navbar.Text className="ms-2 px-1">
+                                <span className="px-1 text-light"> {user.displayName}</span>
                             </Navbar.Text>
                         </Nav>}
                     </Navbar.Collapse>

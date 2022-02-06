@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import Place from '../Place/Place';
+import './Places.css'
 
 const Places = () => {
     const [places, setPlaces] = useState([]);
@@ -12,14 +13,16 @@ const Places = () => {
             .then(data => setPlaces(data))
     }, [])
     return (
-        <Container>
+
+        <Container className="my-5">
+            <h1 className="place-text my-5 pt-5">Choose Where You Want To Visit</h1>
             <Row>
                     {
                         places.map(place => <Place
                             key={place._id}
                             place={place}
-                        ></Place>)
-                    }
+                            ></Place>)
+                        }
             </Row>
         </Container>
     );
