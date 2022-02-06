@@ -9,7 +9,7 @@ const AddSpot = () => {
     const history = useHistory();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/places', data)
+        axios.post('https://limitless-ridge-49943.herokuapp.com/places', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully')
